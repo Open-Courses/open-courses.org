@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400);
+body
+{
+	color:#FFF;
+	font-family:'Open Sans', sans-serif;
+	min-width:960px;
+	top:0;
+	left:0;
+	position:absolute;
+	height:100%;
+	width:100%;
+	margin:0;
+	color:#000;
+	background-size:cover;
+	background:url('../images/swirl_pattern.png') top left repeat;
+}
+
+.ie body
+{
+	filter: dropshadow(color=#000000, offx=0, offy=1);
+}
+
+h1
+{
+	font-size:50px;
+	letter-spacing:-2px;
+	line-height:40px;
+	text-align:center;
+}
+
+.ie h1
+{
+	filter: dropshadow(color=#000000, offx=0, offy=3);
+	padding-bottom:12px;
+}
+
+.ie h2
+{
+	filter: dropshadow(color=#000000, offx=0, offy=3);
+}
+
+#Header
+{
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	padding-top: 50px
+}
+
+.logo
+{
+	width: auto;
+	margin: 0 auto;
+	padding: 16px;
+	border-radius: 180px;
+	padding-bottom:50px;
+}
+
+.logo h1
+{
+	color:#0f66b1;
+	font-weight:600;
+}
+
+.logo img
+{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+.wrapper {
+margin: 0 auto;
+position: relative;
+width: 100%;
+z-index: 1;
+}
+
+#Content h2
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-size: 42px;
+	font-weight: 300;
+	color:#676767;
+	margin-bottom:40px;
+}
+
+@media(max-width:768px){
+	body
+	{
+		min-width: initial !important;
+	}
+
+	.wrapper
+	{
+		width:100%;
+	}
+}
+
+@media(max-width:420px)
+{
+	h1
+	{
+		float:initial;
+		text-align: center;
+		margin-left:0px;
+		margin-bottom:0px;
+	}
+
+	#Content h2
+	{
+		margin: 0px 0px 0px 0px;
+		padding: 0px;
+		text-align: center;
+		font-size: 29px;
+		font-weight: 300;
+	}
+}
